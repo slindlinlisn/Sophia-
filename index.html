@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d99aa8">
+  <title>Sophia's little world ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-shell">
+      <div class="top-note"><span>✦</span> A tiny corner of the internet, made with love <span>♡</span></div>
+      <section class="hero">
+        <div class="hero-collage" aria-label="Scrapbook collage">
+          <span class="tape tape-one"></span><span class="tape tape-two"></span>
+          <div class="collage-note">little<br>memories<br>& big feelings</div>
+          <div class="collage-sticker butterfly">✧</div>
+          <div class="collage-sticker bow">୨୧</div>
+          <div class="polaroid polaroid-one"><div class="photo-placeholder">♡</div><small>sweet things</small></div>
+          <div class="polaroid polaroid-two"><div class="photo-placeholder photo-two">✿</div><small>good days</small></div>
+          <div class="collage-tag">SOPHIA'S<br>SCRAPBOOK</div>
+        </div>
+        <div class="hero-title">
+          <p class="eyebrow">welcome to my little corner</p>
+          <h1>Sophia's little world</h1>
+          <p class="subtitle">A little place made just for you ♡</p>
+          <div class="stitched-line"></div>
+        </div>
+      </section>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="home">Home</button>
+        <button class="nav-link" data-page="cravings">Midnight cravings</button>
+        <button class="nav-link" data-page="quiz">BFF quiz</button>
+        <button class="nav-link" data-page="fortune">Fortune cookie</button>
+        <button class="nav-link" data-page="letters">Open when...</button>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="page active" id="home">
+        <div class="welcome-grid">
+          <div>
+            <span class="section-kicker">♡ hello, sophia</span>
+            <h2>A little world<br><em>that's all yours.</em></h2>
+            <p class="intro">A scrapbook-y place for midnight snacks, silly little quizzes, tiny surprises and words to keep. Make yourself at home.</p>
+            <button class="primary-btn" data-go="cravings">Find a little treat <span>→</span></button>
+          </div>
+          <aside class="quote-card">
+            <span class="quote-mark">“</span>
+            <p>Collect moments,<br>not perfect things.</p>
+            <small>— a little reminder</small>
+            <span class="heart-doodle">♡</span>
+          </aside>
+        </div>
+        <div class="section-heading"><div><span class="section-kicker">the little menu</span><h3>Pick your mood</h3></div><span class="tiny-stamp">EST. WITH LOVE</span></div>
+        <div class="feature-grid">
+          <button class="feature-card leopard-card" data-go="cravings"><span class="feature-icon">☾</span><span class="feature-title">Midnight cravings</span><span class="feature-copy">Easy recipes & cozy snacks</span><span class="feature-arrow">↗</span></button>
+          <button class="feature-card" data-go="quiz"><span class="feature-icon">♡</span><span class="feature-title">The BFF test</span><span class="feature-copy">How well do you know me?</span><span class="feature-arrow">↗</span></button>
+          <button class="feature-card" data-go="fortune"><span class="feature-icon">✧</span><span class="feature-title">Fortune cookie</span><span class="feature-copy">A tiny message for today</span><span class="feature-arrow">↗</span></button>
+          <button class="feature-card" data-go="letters"><span class="feature-icon">✉</span><span class="feature-title">Open when...</span><span class="feature-copy">Little letters for every mood</span><span class="feature-arrow">↗</span></button>
+        </div>
+        <div class="bottom-note"><span>୨୧</span> made of pink things, happy thoughts & a little bit of leopard print <span>୨୧</span></div>
+      </section>
+
+      <section class="page" id="cravings">
+        <div class="page-heading"><span class="section-kicker">something yummy, always</span><h2>Midnight <em>cravings</em></h2><p>Low effort, high reward. Pick a recipe and make yourself a little treat.</p></div>
+        <div class="recipe-tools">
+          <div class="search-wrap"><span>⌕</span><input id="recipe-search" type="search" placeholder="Find a snack..." aria-label="Search recipes"></div>
+          <div class="filter-row" id="recipe-filters">
+            <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="sweet">Sweet</button><button class="filter" data-filter="salty">Salty</button><button class="filter" data-filter="drinks">Drinks</button>
+          </div>
+        </div>
+        <div class="recipe-grid" id="recipe-grid"></div>
+        <div class="random-recipe"><div><span class="section-kicker">can't decide?</span><h3>Let fate pick your snack.</h3><p>One click. One craving solved.</p></div><button class="primary-btn" id="random-recipe">Surprise me ✦</button></div>
+        <div class="recipe-detail" id="recipe-detail" aria-live="polite"></div>
+      </section>
+
+      <section class="page" id="quiz">
+        <div class="page-heading"><span class="section-kicker">friendship files · classified</span><h2>The <em>BFF test</em></h2><p>Let's see if you know the little details. No pressure, just bragging rights.</p></div>
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-top"><span id="quiz-progress">QUESTION 01 / 07</span><span class="quiz-hearts">♡ ♡ ♡</span></div>
+          <div class="progress-track"><div id="quiz-progress-bar"></div></div>
+          <div id="quiz-content"></div>
+        </div>
+      </section>
+
+      <section class="page" id="fortune">
+        <div class="page-heading"><span class="section-kicker">a little note from the universe</span><h2>Fortune <em>cookie</em></h2><p>Take a breath, make a wish, and crack open a tiny surprise.</p></div>
+        <div class="fortune-stage">
+          <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div><div class="sparkle sparkle-c">·</div>
+          <button class="cookie-button" id="cookie-button" aria-label="Open a fortune cookie"><span class="cookie">◖</span><span class="cookie-crack">✧</span><span class="cookie-hint">tap to crack</span></button>
+          <div class="fortune-paper" id="fortune-paper"><span class="paper-label">YOUR LITTLE FORTUNE</span><p id="fortune-message">Something lovely is finding its way to you.</p><small>♡ from your tiny universe ♡</small></div>
+          <button class="text-btn" id="another-fortune">Another little fortune ↻</button>
+        </div>
+      </section>
+
+      <section class="page" id="letters">
+        <div class="page-heading"><span class="section-kicker">sealed with a little love</span><h2>Open <em>when...</em></h2><p>Choose an envelope. Open it whenever you need the words inside.</p></div>
+        <div class="letter-grid" id="letter-grid">
+          <button class="letter-card" data-letter="sad"><span class="envelope">✉</span><strong>Open when you're sad</strong><small>a soft little reminder</small></button>
+          <button class="letter-card" data-letter="bored"><span class="envelope">✉</span><strong>Open when you're bored</strong><small>let's find a little fun</small></button>
+          <button class="letter-card" data-letter="laugh"><span class="envelope">✉</span><strong>Open when you need a laugh</strong><small>emergency silliness</small></button>
+          <button class="letter-card" data-letter="motivation"><span class="envelope">✉</span><strong>Open when you need motivation</strong><small>you've got this, lovely</small></button>
+          <button class="letter-card" data-letter="miss"><span class="envelope">✉</span><strong>Open when you miss me</strong><small>a tiny virtual reminder</small></button>
+          <button class="letter-card" data-letter="win"><span class="envelope">✉</span><strong>Open when something good happens</strong><small>this deserves celebrating</small></button>
+        </div>
+        <div class="letter-modal" id="letter-modal" role="dialog" aria-modal="true" aria-labelledby="letter-title">
+          <div class="letter-paper"><button class="close-modal" id="close-letter" aria-label="Close letter">×</button><span class="section-kicker">a letter just for you</span><h3 id="letter-title">Dear Sophia,</h3><p id="letter-body"></p><small>always cheering you on ♡</small></div>
+        </div>
+        <p class="edit-note">Psst... you can personalize the letters and quiz questions in <code>script.js</code>.</p>
+      </section>
+    </main>
+    <footer><span>♡</span> SOPHIA'S LITTLE WORLD <span>♡</span><small>made with love & a little leopard print</small></footer>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
